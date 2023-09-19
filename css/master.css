@@ -1,0 +1,163 @@
+/* Start Global Variables */
+:root {
+    --dark-blue: #17191e;
+    --main-yellow: #ffdb00;
+}
+.bg-dark-blue {
+    background-color: var(--dark-blue) !important;
+}
+.c-dark-blue {
+    color: var(--dark-blue) !important;
+}
+.bg-main-yellow {
+    background-color: var(--main-yellow) !important;
+}
+.active-bg-main-yellow {
+    background-color: var(--main-yellow);
+}
+.c-main-yellow {
+    color: var(--main-yellow) !important;
+}
+.border-yellow {
+    border-color: var(--main-yellow) !important;
+}
+/* End Global Variables */
+/* Start Global Rules */
+body {
+    font-family: 'Abel', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+/* End Global Rules */
+/* Start Navigation Bar */
+.navbar .container .toggle-menu {
+    border: none;
+    width: 40px;
+    height: 40px;
+}
+/* End Navigation Bar */
+/* Start Landing Section */
+.landing {
+    background-image: url(../images/landing-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.landing::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(23 25 30 / 80%);
+    z-index: 1;
+}
+/* End Landing Section */
+/* Start Quote Section */
+.quote .container .row .col-10 blockquote p::before,
+.quote .container .row .col-10 blockquote p::after {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: var(--dark-blue);
+}
+.quote .container .row .col-10 blockquote p::before {
+    content: "\f10d";
+    margin-right: .5rem;
+}
+.quote .container .row .col-10 blockquote p::after {
+    content: '\f10e';
+    margin-left: .5rem;
+}
+/* End Quote Section */
+/* Start Services Section */
+.services .container .row .card svg {
+    width: 30px;
+    height: 30px;
+    padding: 1.5rem;
+    color: var(--dark-blue);
+    background-color: var(--main-yellow);
+}
+/* End Services Section */
+/* Start Statistics Section */
+.statistics {
+    background-image: url(../images/statistics-bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.statistics::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(23 25 30 / 80%);
+    z-index: 1;
+}
+/* End Statistics Section */
+/* Start Portfolio Section */
+.portfolio .works {
+    background-image: url(../images/works-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.portfolio .works::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(23 25 30 / 80%);
+    z-index: 1;
+}
+/* End Portfolio Section */
+/* Start Clients Section */
+.clients {
+    background-image: url(../images/clients-bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.clients::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(23 25 30 / 80%);
+    z-index: 1;
+}
+/* End Clients Section */
+/* Start Contact Section */
+.contact .container form input::placeholder,
+.contact .container form textarea::placeholder {
+    color: var(--dark-blue);
+    transition: .3s;
+}
+.contact .container form input:focus, 
+.contact .container form textarea:focus {
+    outline: none;
+}
+.contact .container form input:focus::placeholder,
+.contact .container form textarea:focus::placeholder {
+    opacity: 0;
+}
+.contact .container form textarea {
+    resize: none;
+    min-height: 300px;
+}
+.contact .info .container .row .icon {
+    width: 80px;
+    height: 80px;
+    color: white;
+    background-color: var(--dark-blue);
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* End Contact Section */
